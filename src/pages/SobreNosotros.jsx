@@ -11,6 +11,7 @@ export default function SobreNosotros() {
 
   return (
     <main className="page">
+
       {/* NAVBAR */}
       <nav className="navbar">
         <div className="brand">

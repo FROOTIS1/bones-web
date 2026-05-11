@@ -1,6 +1,3 @@
-import { useNavigate } from "react-router-dom";
-import "../App.css";
-
 import {
     Bell,
     Gamepad2,
@@ -11,6 +8,8 @@ import {
     Square,
     Users,
 } from "lucide-react";
+import { useNavigate } from "react-router-dom";
+import "../App.css";
 
 export default function Home() {
   const navigate = useNavigate();
@@ -26,6 +25,7 @@ export default function Home() {
 
   return (
     <main className="page">
+
       {/* NAVBAR */}
       <nav className="navbar">
         <div className="brand">
@@ -76,7 +76,11 @@ export default function Home() {
               ÚNETE AL DISCORD
             </button>
 
-            <button className="secondary" disabled style={{ opacity: 0.4, cursor: "not-allowed" }}>
+            <button
+              className="secondary"
+              disabled
+              style={{ opacity: 0.4, cursor: "not-allowed" }}
+            >
               VER BETA →
             </button>
           </div>
@@ -98,17 +102,10 @@ export default function Home() {
             />
 
             <div className="imageProfileBar">
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  gap: "14px",
-                }}
-              >
+              <div style={{ display: "flex", alignItems: "center", gap: "14px" }}>
                 <div className="profileIcon">
                   <Skull size={20} />
                 </div>
-
                 <div>
                   <strong>Mostazón</strong>
                   <small>● En línea</small>
