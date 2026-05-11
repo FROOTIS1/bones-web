@@ -540,4 +540,57 @@ footer {
     text-align: center;
     padding-bottom: 30px;
   }
+
+/* HAMBURGER */
+
+.hamburger {
+  display: none;
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.15);
+  color: white;
+  padding: 8px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* MENÚ MÓVIL */
+
+.mobileMenu {
+  display: none;
+  flex-direction: column;
+  gap: 16px;
+  background: #0e0e0e;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 20px;
+  padding: 24px;
+  margin-bottom: 30px;
+}
+
+.mobileMenu a {
+  color: rgba(255,255,255,0.75);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.mobileMenu a:hover {
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .discordTop {
+    display: none;
+  }
+
+  .mobileMenu {
+    display: flex;
+  }
+}
+
 }

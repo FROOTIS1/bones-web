@@ -1,20 +1,25 @@
 import {
     Bell,
     Gamepad2,
+    Menu,
     MessageCircle,
     Music2,
     Settings,
     Skull,
     Square,
     Users,
+    X,
 } from "lucide-react";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../App.css";
 
 export default function Home() {
   const navigate = useNavigate();
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const scrollTo = (id) => {
+    setMenuOpen(false);
     const el = document.getElementById(id);
     if (el) el.scrollIntoView({ behavior: "smooth" });
   };
@@ -46,7 +51,25 @@ export default function Home() {
           <Gamepad2 size={18} />
           ÚNETE AL DISCORD
         </button>
+
+        <button className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
+          {menuOpen ? <X size={24} /> : <Menu size={24} />}
+        </button>
       </nav>
+
+      {/* MENÚ MÓVIL */}
+      {menuOpen && (
+        <div className="mobileMenu">
+          <a onClick={() => scrollTo("inicio")}>INICIO</a>
+          <a onClick={() => scrollTo("caracteristicas")}>CARACTERÍSTICAS</a>
+          <a onClick={() => { setMenuOpen(false); navigate("/sobre-nosotros"); }}>SOBRE NOSOTROS</a>
+          <a onClick={() => scrollTo("contacto")}>CONTACTO</a>
+          <button className="primary" onClick={openDiscord}>
+            <Gamepad2 size={18} />
+            ÚNETE AL DISCORD
+          </button>
+        </div>
+      )}
 
       {/* HERO */}
       <section className="hero" id="inicio">
