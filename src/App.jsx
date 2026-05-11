@@ -12,6 +12,15 @@ import {
 } from "lucide-react";
 
 export default function App() {
+  const scrollTo = (id) => {
+    const el = document.getElementById(id);
+    if (el) el.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const openDiscord = () => {
+    window.open("https://discord.gg/r29J6fwrQ", "_blank");
+  };
+
   return (
     <main className="page">
       {/* NAVBAR */}
@@ -24,21 +33,21 @@ export default function App() {
         </div>
 
         <div className="navLinks">
-          <a>INICIO</a>
-          <a>CARACTERÍSTICAS</a>
-          <a>COMUNIDAD</a>
-          <a>BETA</a>
-          <a>CONTACTO</a>
+          <a onClick={() => scrollTo("inicio")}>INICIO</a>
+          <a onClick={() => scrollTo("caracteristicas")}>CARACTERÍSTICAS</a>
+          <a onClick={() => scrollTo("comunidad")}>COMUNIDAD</a>
+          <a onClick={() => scrollTo("beta")}>BETA</a>
+          <a onClick={() => scrollTo("contacto")}>CONTACTO</a>
         </div>
 
-        <button className="discordTop">
+        <button className="discordTop" onClick={openDiscord}>
           <Gamepad2 size={18} />
           ÚNETE AL DISCORD
         </button>
       </nav>
 
       {/* HERO */}
-      <section className="hero">
+      <section className="hero" id="inicio">
 
         {/* LEFT */}
         <div className="left">
@@ -50,8 +59,7 @@ export default function App() {
 
           <h1>
             LA NUEVA <br />
-            RED SOCIAL <br />
-            
+            RED SOCIAL
           </h1>
 
           <p>
@@ -61,20 +69,18 @@ export default function App() {
           </p>
 
           <div className="buttons">
-            <button className="primary">
+            <button className="primary" onClick={openDiscord}>
               <Gamepad2 size={18} />
               ÚNETE AL DISCORD
             </button>
 
-            <button className="secondary">
+            <button className="secondary" disabled style={{ opacity: 0.4, cursor: "not-allowed" }}>
               VER BETA →
             </button>
           </div>
 
           <div className="users">
-            <p>
-              Únete a miles de usuarios en nuestra comunidad
-            </p>
+            <p>Únete a miles de usuarios en nuestra comunidad</p>
           </div>
 
         </div>
@@ -118,57 +124,42 @@ export default function App() {
       </section>
 
       {/* FEATURES */}
-      <section className="features">
+      <section className="features" id="caracteristicas">
 
         <div>
           <MessageCircle className="featureIcon" />
           <h3>CHATS</h3>
-          <p>
-            Mensajes privados y grupales totalmente
-            personalizables.
-          </p>
+          <p>Mensajes privados y grupales totalmente personalizables.</p>
         </div>
 
         <div>
           <Users className="featureIcon" />
           <h3>COMUNIDADES</h3>
-          <p>
-            Crea, únete y participa en comunidades con
-            tus temas favoritos.
-          </p>
+          <p>Crea, únete y participa en comunidades con tus temas favoritos.</p>
         </div>
 
         <div>
           <Skull className="featureIcon" />
           <h3>AVATARES</h3>
-          <p>
-            Personaliza tu avatar al estilo Bones
-            con miles de opciones.
-          </p>
+          <p>Personaliza tu avatar al estilo Bones con miles de opciones.</p>
         </div>
 
         <div>
           <Music2 className="featureIcon" />
           <h3>MÚSICA</h3>
-          <p>
-            Añade tu música favorita a tu perfil y
-            destaca tu estilo.
-          </p>
+          <p>Añade tu música favorita a tu perfil y destaca tu estilo.</p>
         </div>
 
         <div>
           <Square className="featureIcon" />
           <h3>MARCOS</h3>
-          <p>
-            Consigue marcos únicos y muestra tu
-            perfil como quieras.
-          </p>
+          <p>Consigue marcos únicos y muestra tu perfil como quieras.</p>
         </div>
 
       </section>
 
       {/* FOOTER */}
-      <footer>
+      <footer id="contacto">
         <Skull size={14} />
         PRÓXIMAMENTE EN ANDROID · APK DISPONIBLE PRÓXIMAMENTE
       </footer>
