@@ -3,6 +3,7 @@ import "./App.css";
 import {
   Bell,
   Gamepad2,
+  Info,
   MessageCircle,
   Music2,
   Settings,
@@ -35,8 +36,7 @@ export default function App() {
         <div className="navLinks">
           <a onClick={() => scrollTo("inicio")}>INICIO</a>
           <a onClick={() => scrollTo("caracteristicas")}>CARACTERÍSTICAS</a>
-          <a onClick={() => scrollTo("comunidad")}>COMUNIDAD</a>
-          <a onClick={() => scrollTo("beta")}>BETA</a>
+          <a onClick={() => scrollTo("sobre-nosotros")}>SOBRE NOSOTROS</a>
           <a onClick={() => scrollTo("contacto")}>CONTACTO</a>
         </div>
 
@@ -154,6 +154,57 @@ export default function App() {
           <Square className="featureIcon" />
           <h3>MARCOS</h3>
           <p>Consigue marcos únicos y muestra tu perfil como quieras.</p>
+        </div>
+
+      </section>
+
+      {/* SOBRE NOSOTROS */}
+      <section className="about" id="sobre-nosotros">
+
+        <div className="aboutInner">
+
+          <div className="aboutIcon">
+            <Info size={28} />
+          </div>
+
+          <div className="aboutTag">SOBRE NOSOTROS</div>
+
+          <h2>¿Qué es Bones Social?</h2>
+
+          <p>
+            Bones Social es una plataforma social diseñada para conectar personas
+            con intereses en común dentro de un entorno digital único y diferente.
+            Nuestra misión es ofrecer un espacio donde la identidad, la creatividad
+            y la comunidad sean el centro de cada experiencia.
+          </p>
+
+          <p>
+            A diferencia de las redes sociales tradicionales, Bones Social nació
+            con una visión clara: crear un ecosistema donde cada usuario pueda
+            expresarse libremente a través de avatares personalizados, comunidades
+            temáticas, música y una estética visual que rompe con lo convencional.
+          </p>
+
+          <p>
+            Estamos construyendo algo nuevo. Una red social hecha por y para
+            quienes buscan más que likes — buscan pertenencia, identidad y conexión real.
+          </p>
+
+          <div className="aboutStats">
+            <div>
+              <strong>+2K</strong>
+              <span>Usuarios en comunidad</span>
+            </div>
+            <div>
+              <strong>100%</strong>
+              <span>Personalizable</span>
+            </div>
+            <div>
+              <strong>BETA</strong>
+              <span>Próximamente disponible</span>
+            </div>
+          </div>
+
         </div>
 
       </section>

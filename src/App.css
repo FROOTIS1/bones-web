@@ -140,12 +140,6 @@
   margin-bottom: 30px;
 }
 
-.left h1 span {
-  color: transparent;
-
-  -webkit-text-stroke: 2px white;
-}
-
 .left p {
   max-width: 540px;
 
@@ -222,34 +216,6 @@
   display: flex;
   align-items: center;
   gap: 12px;
-}
-
-.avatar {
-  width: 38px;
-  height: 38px;
-
-  border-radius: 50%;
-
-  background: rgba(255,255,255,0.08);
-
-  border: 1px solid rgba(255,255,255,0.1);
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.users span {
-  background: rgba(255,255,255,0.08);
-
-  border: 1px solid rgba(255,255,255,0.08);
-
-  padding: 8px 12px;
-
-  border-radius: 999px;
-
-  font-size: 13px;
-  font-weight: 700;
 }
 
 .users p {
@@ -425,6 +391,81 @@
   font-size: 14px;
 }
 
+/* SOBRE NOSOTROS */
+
+.about {
+  margin-top: 90px;
+  display: flex;
+  justify-content: center;
+}
+
+.aboutInner {
+  max-width: 780px;
+  width: 100%;
+  background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 28px;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.aboutIcon {
+  width: 54px;
+  height: 54px;
+  border-radius: 14px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #c8b6ff;
+}
+
+.aboutTag {
+  font-size: 11px;
+  letter-spacing: 6px;
+  color: rgba(255,255,255,0.4);
+}
+
+.aboutInner h2 {
+  font-size: 36px;
+  font-weight: 900;
+  margin: 0;
+}
+
+.aboutInner p {
+  color: rgba(255,255,255,0.6);
+  line-height: 1.8;
+  font-size: 16px;
+  margin: 0;
+}
+
+.aboutStats {
+  display: flex;
+  gap: 40px;
+  margin-top: 20px;
+  padding-top: 30px;
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+.aboutStats div {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.aboutStats strong {
+  font-size: 28px;
+  font-weight: 900;
+}
+
+.aboutStats span {
+  font-size: 13px;
+  color: rgba(255,255,255,0.45);
+}
+
 /* FOOTER */
 
 footer {
@@ -460,6 +501,10 @@ footer {
   .features {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .aboutInner {
+    padding: 40px;
+  }
 }
 
 @media (max-width: 900px) {
@@ -488,5 +533,14 @@ footer {
 
   .features {
     grid-template-columns: 1fr;
+  }
+
+  .aboutInner {
+    padding: 30px;
+  }
+
+  .aboutStats {
+    flex-direction: column;
+    gap: 20px;
   }
 }
