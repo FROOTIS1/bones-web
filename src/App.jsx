@@ -51,7 +51,7 @@ export default function App() {
           <h1>
             LA NUEVA <br />
             RED SOCIAL <br />
-            OSCURA
+            
           </h1>
 
           <p>
