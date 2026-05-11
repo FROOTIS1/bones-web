@@ -8,7 +8,6 @@ import {
   Settings,
   Skull,
   Square,
-  User,
   Users,
 } from "lucide-react";
 
@@ -21,7 +20,6 @@ export default function App() {
           <div className="skull">
             <Skull size={24} />
           </div>
-
           <span>BONES SOCIAL</span>
         </div>
 
@@ -53,7 +51,7 @@ export default function App() {
           <h1>
             LA NUEVA <br />
             RED SOCIAL <br />
-            <span>OSCURA</span>
+            OSCURA
           </h1>
 
           <p>
@@ -63,7 +61,6 @@ export default function App() {
           </p>
 
           <div className="buttons">
-
             <button className="primary">
               <Gamepad2 size={18} />
               ÚNETE AL DISCORD
@@ -72,35 +69,18 @@ export default function App() {
             <button className="secondary">
               VER BETA →
             </button>
-
           </div>
 
           <div className="users">
-
-            <div className="avatar">
-              <Skull size={15} />
-            </div>
-
-            <div className="avatar">
-              <User size={15} />
-            </div>
-
-            <div className="avatar">
-              <Skull size={15} />
-            </div>
-
-            <span>+2K</span>
-
             <p>
               Únete a miles de usuarios en nuestra comunidad
             </p>
-
           </div>
+
         </div>
 
         {/* RIGHT */}
         <div className="right">
-
           <div className="appCard">
 
             <img
@@ -110,7 +90,6 @@ export default function App() {
             />
 
             <div className="imageProfileBar">
-
               <div
                 style={{
                   display: "flex",
@@ -118,7 +97,6 @@ export default function App() {
                   gap: "14px",
                 }}
               >
-
                 <div className="profileIcon">
                   <Skull size={20} />
                 </div>
@@ -127,7 +105,6 @@ export default function App() {
                   <strong>Mostazón</strong>
                   <small>● En línea</small>
                 </div>
-
               </div>
 
               <div className="profileActions">
@@ -135,7 +112,6 @@ export default function App() {
                 <Bell size={20} />
                 <Settings size={20} />
               </div>
-
             </div>
           </div>
         </div>
@@ -146,9 +122,7 @@ export default function App() {
 
         <div>
           <MessageCircle className="featureIcon" />
-
           <h3>CHATS</h3>
-
           <p>
             Mensajes privados y grupales totalmente
             personalizables.
@@ -157,9 +131,7 @@ export default function App() {
 
         <div>
           <Users className="featureIcon" />
-
           <h3>COMUNIDADES</h3>
-
           <p>
             Crea, únete y participa en comunidades con
             tus temas favoritos.
@@ -168,9 +140,7 @@ export default function App() {
 
         <div>
           <Skull className="featureIcon" />
-
           <h3>AVATARES</h3>
-
           <p>
             Personaliza tu avatar al estilo Bones
             con miles de opciones.
@@ -179,9 +149,7 @@ export default function App() {
 
         <div>
           <Music2 className="featureIcon" />
-
           <h3>MÚSICA</h3>
-
           <p>
             Añade tu música favorita a tu perfil y
             destaca tu estilo.
@@ -190,9 +158,7 @@ export default function App() {
 
         <div>
           <Square className="featureIcon" />
-
           <h3>MARCOS</h3>
-
           <p>
             Consigue marcos únicos y muestra tu
             perfil como quieras.
