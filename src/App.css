@@ -2,11 +2,8 @@
   min-height: 100vh;
   background: #030303;
   color: white;
-
   font-family: Inter, sans-serif;
-
   padding: 20px 60px;
-
   overflow-x: hidden;
 }
 
@@ -14,11 +11,9 @@
 
 .navbar {
   width: 100%;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   margin-bottom: 70px;
 }
 
@@ -26,7 +21,6 @@
   display: flex;
   align-items: center;
   gap: 12px;
-
   font-weight: 800;
   letter-spacing: 1px;
 }
@@ -34,18 +28,13 @@
 .skull {
   width: 42px;
   height: 42px;
-
   border-radius: 12px;
-
   background: white;
   color: black;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
-  box-shadow:
-    0 0 20px rgba(255,255,255,0.25);
+  box-shadow: 0 0 20px rgba(255,255,255,0.25);
 }
 
 .navLinks {
@@ -56,14 +45,10 @@
 
 .navLinks a {
   color: rgba(255,255,255,0.75);
-
   font-size: 13px;
   font-weight: 700;
-
   letter-spacing: 2px;
-
   cursor: pointer;
-
   transition: 0.25s;
 }
 
@@ -73,41 +58,30 @@
 
 .discordTop {
   border: none;
-
   display: flex;
   align-items: center;
   gap: 10px;
-
   background: white;
   color: black;
-
   padding: 14px 22px;
-
   border-radius: 14px;
-
   font-weight: 800;
-
   cursor: pointer;
-
   transition: 0.25s;
 }
 
 .discordTop:hover {
   transform: translateY(-2px);
-
-  box-shadow:
-    0 0 25px rgba(255,255,255,0.2);
+  box-shadow: 0 0 25px rgba(255,255,255,0.2);
 }
 
 /* HERO */
 
 .hero {
   width: 100%;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   gap: 60px;
 }
 
@@ -121,33 +95,24 @@
   display: flex;
   align-items: center;
   gap: 10px;
-
   color: rgba(255,255,255,0.5);
-
   letter-spacing: 6px;
-
   font-size: 11px;
-
   margin-bottom: 28px;
 }
 
 .left h1 {
   font-size: 92px;
   line-height: 0.95;
-
   font-weight: 900;
-
   margin-bottom: 30px;
 }
 
 .left p {
   max-width: 540px;
-
   color: rgba(255,255,255,0.65);
-
   font-size: 18px;
   line-height: 1.7;
-
   margin-bottom: 40px;
 }
 
@@ -157,52 +122,36 @@
   display: flex;
   align-items: center;
   gap: 18px;
-
   margin-bottom: 38px;
 }
 
 .primary {
   border: none;
-
   background: white;
   color: black;
-
   display: flex;
   align-items: center;
   gap: 10px;
-
   padding: 16px 24px;
-
   border-radius: 14px;
-
   font-weight: 800;
-
   cursor: pointer;
-
   transition: 0.25s;
 }
 
 .primary:hover {
   transform: translateY(-2px);
-
-  box-shadow:
-    0 0 30px rgba(255,255,255,0.22);
+  box-shadow: 0 0 30px rgba(255,255,255,0.22);
 }
 
 .secondary {
   background: transparent;
   color: white;
-
   border: 1px solid rgba(255,255,255,0.18);
-
   padding: 16px 24px;
-
   border-radius: 14px;
-
   font-weight: 700;
-
   cursor: pointer;
-
   transition: 0.25s;
 }
 
@@ -220,9 +169,7 @@
 
 .users p {
   margin: 0;
-
   font-size: 14px;
-
   color: rgba(255,255,255,0.55);
 }
 
@@ -230,7 +177,6 @@
 
 .right {
   flex: 1;
-
   display: flex;
   justify-content: center;
 }
@@ -239,22 +185,15 @@
 
 .appCard {
   position: relative;
-
   width: 650px;
   height: 650px;
-
   border-radius: 40px;
-
   overflow: hidden;
-
   background: #050505;
-
   border: 2px solid rgba(255,255,255,0.12);
-
   box-shadow:
     0 0 30px rgba(160,120,255,0.18),
     0 0 120px rgba(120,90,255,0.1);
-
   display: flex;
   align-items: flex-end;
   justify-content: center;
@@ -263,66 +202,50 @@
 .mostazonCardImage {
   position: absolute;
   inset: 0;
-
   width: 100%;
   height: 100%;
-
   object-fit: cover;
   object-position: center;
-
   z-index: 1;
 }
 
 .imageProfileBar {
   position: relative;
   z-index: 2;
-
   width: 100%;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   padding: 22px 26px;
-
   background: linear-gradient(
     180deg,
     rgba(0,0,0,0) 0%,
     rgba(0,0,0,0.68) 40%,
     rgba(0,0,0,0.96) 100%
   );
-
   backdrop-filter: blur(12px);
-
   border-top: 1px solid rgba(255,255,255,0.08);
 }
 
 .profileIcon {
   width: 46px;
   height: 46px;
-
   border-radius: 50%;
-
   background: white;
   color: black;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
-  box-shadow:
-    0 0 20px rgba(255,255,255,0.18);
+  box-shadow: 0 0 20px rgba(255,255,255,0.18);
 }
 
 .imageProfileBar strong {
   display: block;
-
   font-size: 17px;
 }
 
 .imageProfileBar small {
   color: #43ff7a;
-
   font-size: 13px;
 }
 
@@ -330,7 +253,6 @@
   display: flex;
   align-items: center;
   gap: 18px;
-
   color: rgba(255,255,255,0.85);
 }
 
@@ -338,26 +260,18 @@
 
 .features {
   margin-top: 90px;
-
   width: 100%;
-
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-
   border: 1px solid rgba(255,255,255,0.08);
-
   border-radius: 28px;
-
   overflow: hidden;
 }
 
 .features div {
   padding: 34px 26px;
-
   background: rgba(255,255,255,0.02);
-
   border-right: 1px solid rgba(255,255,255,0.06);
-
   transition: 0.25s;
 }
 
@@ -367,27 +281,22 @@
 
 .features div:hover {
   background: rgba(255,255,255,0.04);
-
   transform: translateY(-4px);
 }
 
 .featureIcon {
   margin-bottom: 20px;
-
   color: #c8b6ff;
 }
 
 .features h3 {
   margin-bottom: 12px;
-
   font-size: 18px;
 }
 
 .features p {
   color: rgba(255,255,255,0.6);
-
   line-height: 1.6;
-
   font-size: 14px;
 }
 
@@ -470,20 +379,16 @@
 
 footer {
   margin-top: 60px;
-
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 12px;
-
   color: rgba(255,255,255,0.4);
-
   font-size: 13px;
-
   padding-bottom: 20px;
 }
 
-/* RESPONSIVE */
+/* RESPONSIVE TABLET */
 
 @media (max-width: 1450px) {
   .hero {
@@ -492,7 +397,6 @@ footer {
 
   .left {
     text-align: center;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -507,40 +411,133 @@ footer {
   }
 }
 
-@media (max-width: 900px) {
+/* RESPONSIVE MÓVIL */
+
+@media (max-width: 768px) {
   .page {
-    padding: 20px;
+    padding: 16px 20px;
   }
 
+  /* NAVBAR MÓVIL */
   .navbar {
-    flex-direction: column;
-    gap: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 40px;
   }
 
   .navLinks {
-    flex-wrap: wrap;
-    justify-content: center;
+    display: none;
+  }
+
+  .discordTop {
+    padding: 10px 16px;
+    font-size: 12px;
+    border-radius: 10px;
+  }
+
+  /* HERO MÓVIL */
+  .hero {
+    flex-direction: column;
+    gap: 36px;
+  }
+
+  .left {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .left h1 {
-    font-size: 58px;
+    font-size: 48px;
+    line-height: 1;
+    margin-bottom: 20px;
+  }
+
+  .left p {
+    font-size: 15px;
+    margin-bottom: 28px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+  }
+
+  .primary,
+  .secondary {
+    width: 100%;
+    justify-content: center;
+    padding: 14px 20px;
+  }
+
+  /* APP CARD MÓVIL */
+  .right {
+    width: 100%;
   }
 
   .appCard {
     width: 100%;
-    height: 520px;
+    height: 420px;
+    border-radius: 24px;
   }
 
+  /* FEATURES MÓVIL */
   .features {
-    grid-template-columns: 1fr;
+    margin-top: 50px;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 20px;
+  }
+
+  .features div {
+    padding: 24px 18px;
+  }
+
+  .features h3 {
+    font-size: 14px;
+  }
+
+  .features p {
+    font-size: 12px;
+  }
+
+  /* SOBRE NOSOTROS MÓVIL */
+  .about {
+    margin-top: 50px;
   }
 
   .aboutInner {
-    padding: 30px;
+    padding: 24px;
+    border-radius: 20px;
+    gap: 16px;
+  }
+
+  .aboutInner h2 {
+    font-size: 26px;
+  }
+
+  .aboutInner p {
+    font-size: 14px;
   }
 
   .aboutStats {
     flex-direction: column;
-    gap: 20px;
+    gap: 16px;
+  }
+
+  .aboutStats strong {
+    font-size: 22px;
+  }
+
+  /* FOOTER MÓVIL */
+  footer {
+    margin-top: 40px;
+    font-size: 11px;
+    text-align: center;
+    padding-bottom: 30px;
   }
 }
