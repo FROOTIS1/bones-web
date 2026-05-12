@@ -44,6 +44,7 @@ export default function Home() {
           <a onClick={() => scrollTo("inicio")}>INICIO</a>
           <a onClick={() => scrollTo("caracteristicas")}>CARACTERÍSTICAS</a>
           <a onClick={() => navigate("/sobre-nosotros")}>SOBRE NOSOTROS</a>
+          <a onClick={() => navigate("/avances")}>AVANCES</a>
           <a onClick={() => scrollTo("contacto")}>CONTACTO</a>
         </div>
 
@@ -63,6 +64,7 @@ export default function Home() {
           <a onClick={() => scrollTo("inicio")}>INICIO</a>
           <a onClick={() => scrollTo("caracteristicas")}>CARACTERÍSTICAS</a>
           <a onClick={() => { setMenuOpen(false); navigate("/sobre-nosotros"); }}>SOBRE NOSOTROS</a>
+          <a onClick={() => { setMenuOpen(false); navigate("/avances"); }}>AVANCES</a>
           <a onClick={() => scrollTo("contacto")}>CONTACTO</a>
           <button className="primary" onClick={openDiscord}>
             <Gamepad2 size={18} />

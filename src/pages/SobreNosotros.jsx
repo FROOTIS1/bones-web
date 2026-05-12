@@ -27,6 +27,7 @@ export default function SobreNosotros() {
           <a onClick={() => navigate("/")}>INICIO</a>
           <a onClick={() => navigate("/")}>CARACTERÍSTICAS</a>
           <a style={{ color: "white" }}>SOBRE NOSOTROS</a>
+          <a onClick={() => navigate("/avances")}>AVANCES</a>
           <a onClick={() => navigate("/")}>CONTACTO</a>
         </div>
 
@@ -46,6 +47,7 @@ export default function SobreNosotros() {
           <a onClick={() => { setMenuOpen(false); navigate("/"); }}>INICIO</a>
           <a onClick={() => { setMenuOpen(false); navigate("/"); }}>CARACTERÍSTICAS</a>
           <a style={{ color: "white" }}>SOBRE NOSOTROS</a>
+          <a onClick={() => { setMenuOpen(false); navigate("/avances"); }}>AVANCES</a>
           <a onClick={() => { setMenuOpen(false); navigate("/"); }}>CONTACTO</a>
           <button className="primary" onClick={openDiscord}>
             <Gamepad2 size={18} />
