@@ -78,12 +78,10 @@ export default function Avances() {
       {tab === "boneslife" && (
         <section className="avancesSection">
 
-          {/* LOGO */}
           <div className="bonesLifeLogo">
             <img src="/images/bones-life-logo.png" alt="Bones Life" />
           </div>
 
-          {/* PERSONAJES */}
           <div className="avancesSubtitle">PERSONAJES</div>
           <div className="avancesGrid">
             <div className="avancesCard">
@@ -103,13 +101,11 @@ export default function Avances() {
             </div>
           </div>
 
-          {/* MAPA */}
           <div className="avancesSubtitle">MAPA</div>
           <div className="avancesMapaWrap">
             <img src="/images/mapa1.png" alt="Mapa Bones Life" className="avancesMapa" />
           </div>
 
-          {/* VIDEOS */}
           <div className="avancesSubtitle">ANIMACIONES</div>
           <div className="avancesVideos">
             <video controls>
@@ -120,56 +116,15 @@ export default function Avances() {
             </video>
           </div>
 
-          {/* INFO BONES LIFE */}
           <div className="bonesLifeInfo">
             <h2>¿Qué es Bones Life?</h2>
-            <p>
-              Bones Life es la nueva experiencia social interactiva de Bones Social.
-              Más que una simple función, Bones Life transforma la manera en la que
-              los usuarios se conocen e interactúan dentro de una red social, llevando
-              la comunicación a un entorno virtual vivo y completamente personalizable.
-            </p>
-            <p>
-              Dentro de Bones Life cada usuario podrá crear su propio avatar 3D con
-              diferentes estilos, ropa, accesorios, animaciones, expresiones y elementos
-              cosméticos exclusivos inspirados en la estética oscura y gamer de Bones
-              Social. El objetivo es que cada avatar represente verdaderamente la
-              personalidad de quien lo utiliza.
-            </p>
-            <p>
-              Una vez personalizado el avatar, el usuario podrá entrar a un mundo online
-              compartido donde cientos de personas podrán interactuar al mismo tiempo
-              dentro de una gran plaza social. Este espacio funcionará como un punto de
-              encuentro virtual donde los usuarios podrán caminar libremente, explorar
-              zonas, acercarse a otros jugadores y comenzar conversaciones de forma mucho
-              más natural y dinámica que en una red social tradicional.
-            </p>
-            <p>
-              Bones Life busca recrear la sensación de encontrarse con personas reales
-              dentro de un entorno digital. Los usuarios podrán ver avatares moviéndose
-              en tiempo real, escribir mensajes directamente desde el mundo virtual,
-              interactuar con grupos, descubrir nuevas personas y participar en
-              actividades sociales dentro de la plaza principal.
-            </p>
-            <p>
-              Además de la interacción social, Bones Life contará con actividades y
-              minijuegos donde los usuarios podrán jugar entre sí, desbloquear
-              recompensas, conseguir cosméticos especiales y crear una identidad aún
-              más única dentro de la plataforma.
-            </p>
-            <p>
-              La experiencia también estará conectada directamente con el perfil del
-              usuario en Bones Social. Los marcos, discos de música, burbujas de chat,
-              accesorios y otros elementos desbloqueados podrán reflejarse dentro del
-              mundo de Bones Life, creando un ecosistema completamente conectado entre
-              la red social y el entorno virtual.
-            </p>
-            <p>
-              Bones Life representa la evolución de Bones Social hacia una nueva forma
-              de conexión digital: un espacio donde las personas no solo publican
-              contenido, sino donde realmente pueden vivir, explorar, hablar y crear
-              recuerdos dentro de un mundo social interactivo.
-            </p>
+            <p>Bones Life es la nueva experiencia social interactiva de Bones Social. Más que una simple función, Bones Life transforma la manera en la que los usuarios se conocen e interactúan dentro de una red social, llevando la comunicación a un entorno virtual vivo y completamente personalizable.</p>
+            <p>Dentro de Bones Life cada usuario podrá crear su propio avatar 3D con diferentes estilos, ropa, accesorios, animaciones, expresiones y elementos cosméticos exclusivos inspirados en la estética oscura y gamer de Bones Social. El objetivo es que cada avatar represente verdaderamente la personalidad de quien lo utiliza.</p>
+            <p>Una vez personalizado el avatar, el usuario podrá entrar a un mundo online compartido donde cientos de personas podrán interactuar al mismo tiempo dentro de una gran plaza social. Este espacio funcionará como un punto de encuentro virtual donde los usuarios podrán caminar libremente, explorar zonas, acercarse a otros jugadores y comenzar conversaciones de forma mucho más natural y dinámica que en una red social tradicional.</p>
+            <p>Bones Life busca recrear la sensación de encontrarse con personas reales dentro de un entorno digital. Los usuarios podrán ver avatares moviéndose en tiempo real, escribir mensajes directamente desde el mundo virtual, interactuar con grupos, descubrir nuevas personas y participar en actividades sociales dentro de la plaza principal.</p>
+            <p>Además de la interacción social, Bones Life contará con actividades y minijuegos donde los usuarios podrán jugar entre sí, desbloquear recompensas, conseguir cosméticos especiales y crear una identidad aún más única dentro de la plataforma.</p>
+            <p>La experiencia también estará conectada directamente con el perfil del usuario en Bones Social. Los marcos, discos de música, burbujas de chat, accesorios y otros elementos desbloqueados podrán reflejarse dentro del mundo de Bones Life, creando un ecosistema completamente conectado entre la red social y el entorno virtual.</p>
+            <p>Bones Life representa la evolución de Bones Social hacia una nueva forma de conexión digital: un espacio donde las personas no solo publican contenido, sino donde realmente pueden vivir, explorar, hablar y crear recuerdos dentro de un mundo social interactivo.</p>
           </div>
 
         </section>
@@ -179,18 +134,31 @@ export default function Avances() {
       {tab === "bonessocial" && (
         <section className="avancesSection">
 
-          <div className="avancesHeader">
-            <div className="aboutTag">AVANCES</div>
-            <h2>Bones Social</h2>
-            <p>
-              Aquí irán próximamente capturas e información sobre las funciones
-              de Bones Social: chats, comunidades, perfiles, marcos, música y más.
-            </p>
+          <div className="bonesLifeLogo">
+            <img src="/images/bones-social/bones-logo.png" alt="Bones Social" />
           </div>
 
-          <div className="avancesProximamente">
-            <Skull size={40} />
-            <span>PRÓXIMAMENTE</span>
+          <div className="avancesSubtitle">CAPTURAS DE LA APP</div>
+          <div className="bsGrid">
+            <div className="bsCard"><img src="/images/bones-social/bs1.png" alt="Tienda" /></div>
+            <div className="bsCard"><img src="/images/bones-social/bs2.png" alt="Feed" /></div>
+            <div className="bsCard"><img src="/images/bones-social/bs3.png" alt="Chat de voz" /></div>
+            <div className="bsCard"><img src="/images/bones-social/bs4.png" alt="Emojis" /></div>
+            <div className="bsCard"><img src="/images/bones-social/bs5.png" alt="Comunidades" /></div>
+            <div className="bsCard"><img src="/images/bones-social/bs6.png" alt="Comunidades destacadas" /></div>
+            <div className="bsCard"><img src="/images/bones-social/bs7.png" alt="Tu tribu" /></div>
+            <div className="bsCard"><img src="/images/bones-social/bs8.png" alt="Tienda música" /></div>
+            <div className="bsCard"><img src="/images/bones-social/bs9.png" alt="Marcos" /></div>
+            <div className="bsCard"><img src="/images/bones-social/bs10.png" alt="Marcos 2" /></div>
+            <div className="bsCard"><img src="/images/bones-social/bs11.png" alt="Ajustes" /></div>
+            <div className="bsCard"><img src="/images/bones-social/bs12.png" alt="Feed posts" /></div>
+            <div className="bsCard"><img src="/images/bones-social/bs13.png" alt="Crear publicación" /></div>
+            <div className="bsCard"><img src="/images/bones-social/bs14.png" alt="Burbujas" /></div>
+            <div className="bsCard"><img src="/images/bones-social/bs15.png" alt="Hope Core" /></div>
+            <div className="bsCard"><img src="/images/bones-social/bs16.png" alt="NCS" /></div>
+            <div className="bsCard"><img src="/images/bones-social/bs17.png" alt="Chat" /></div>
+            <div className="bsCard"><img src="/images/bones-social/bs18.png" alt="Editar perfil" /></div>
+            <div className="bsCard"><img src="/images/bones-social/bs19.png" alt="Perfil" /></div>
           </div>
 
         </section>
