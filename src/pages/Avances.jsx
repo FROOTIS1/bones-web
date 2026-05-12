@@ -93,26 +93,26 @@ export default function Avances() {
           <div className="avancesSubtitle">PERSONAJES</div>
           <div className="avancesGrid">
             <div className="avancesCard">
-              <img src="/images/bones-life/personaje1.png" alt="Personaje 1" />
+              <img src="/images/personaje1.png" alt="Personaje 1" />
             </div>
             <div className="avancesCard">
-              <img src="/images/bones-life/personaje2.png" alt="Personaje 2" />
+              <img src="/images/personaje2.png" alt="Personaje 2" />
             </div>
             <div className="avancesCard">
-              <img src="/images/bones-life/personaje3.png" alt="Personaje 3" />
+              <img src="/images/personaje3.png" alt="Personaje 3" />
             </div>
             <div className="avancesCard">
-              <img src="/images/bones-life/personaje4.png" alt="Personaje 4" />
+              <img src="/images/personaje4.png" alt="Personaje 4" />
             </div>
             <div className="avancesCard">
-              <img src="/images/bones-life/personaje5.png" alt="Personaje 5" />
+              <img src="/images/personaje5.png" alt="Personaje 5" />
             </div>
           </div>
 
           {/* MAPA */}
           <div className="avancesSubtitle">MAPA</div>
           <div className="avancesMapaWrap">
-            <img src="/images/bones-life/mapa.png" alt="Mapa Bones Life" className="avancesMapa" />
+            <img src="/images/mapa1.png" alt="Mapa Bones Life" className="avancesMapa" />
           </div>
 
           {/* VIDEOS */}
