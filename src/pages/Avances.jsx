@@ -78,15 +78,9 @@ export default function Avances() {
       {tab === "boneslife" && (
         <section className="avancesSection">
 
-          <div className="avancesHeader">
-            <div className="aboutTag">AVANCES</div>
-            <h2>Bones Life</h2>
-            <p>
-              Bones Life es el mundo social 3D dentro de Bones Social. Crea y personaliza
-              tu avatar, entra a una plaza compartida con otros usuarios, camina libremente,
-              interactúa en tiempo real, explora zonas, participa en actividades y vive una
-              forma completamente nueva de socializar.
-            </p>
+          {/* LOGO */}
+          <div className="bonesLifeLogo">
+            <img src="/images/bones-life-logo.png" alt="Bones Life" />
           </div>
 
           {/* PERSONAJES */}
@@ -124,6 +118,58 @@ export default function Avances() {
             <video controls>
               <source src="/videos/animacion2.mp4" type="video/mp4" />
             </video>
+          </div>
+
+          {/* INFO BONES LIFE */}
+          <div className="bonesLifeInfo">
+            <h2>¿Qué es Bones Life?</h2>
+            <p>
+              Bones Life es la nueva experiencia social interactiva de Bones Social.
+              Más que una simple función, Bones Life transforma la manera en la que
+              los usuarios se conocen e interactúan dentro de una red social, llevando
+              la comunicación a un entorno virtual vivo y completamente personalizable.
+            </p>
+            <p>
+              Dentro de Bones Life cada usuario podrá crear su propio avatar 3D con
+              diferentes estilos, ropa, accesorios, animaciones, expresiones y elementos
+              cosméticos exclusivos inspirados en la estética oscura y gamer de Bones
+              Social. El objetivo es que cada avatar represente verdaderamente la
+              personalidad de quien lo utiliza.
+            </p>
+            <p>
+              Una vez personalizado el avatar, el usuario podrá entrar a un mundo online
+              compartido donde cientos de personas podrán interactuar al mismo tiempo
+              dentro de una gran plaza social. Este espacio funcionará como un punto de
+              encuentro virtual donde los usuarios podrán caminar libremente, explorar
+              zonas, acercarse a otros jugadores y comenzar conversaciones de forma mucho
+              más natural y dinámica que en una red social tradicional.
+            </p>
+            <p>
+              Bones Life busca recrear la sensación de encontrarse con personas reales
+              dentro de un entorno digital. Los usuarios podrán ver avatares moviéndose
+              en tiempo real, escribir mensajes directamente desde el mundo virtual,
+              interactuar con grupos, descubrir nuevas personas y participar en
+              actividades sociales dentro de la plaza principal.
+            </p>
+            <p>
+              Además de la interacción social, Bones Life contará con actividades y
+              minijuegos donde los usuarios podrán jugar entre sí, desbloquear
+              recompensas, conseguir cosméticos especiales y crear una identidad aún
+              más única dentro de la plataforma.
+            </p>
+            <p>
+              La experiencia también estará conectada directamente con el perfil del
+              usuario en Bones Social. Los marcos, discos de música, burbujas de chat,
+              accesorios y otros elementos desbloqueados podrán reflejarse dentro del
+              mundo de Bones Life, creando un ecosistema completamente conectado entre
+              la red social y el entorno virtual.
+            </p>
+            <p>
+              Bones Life representa la evolución de Bones Social hacia una nueva forma
+              de conexión digital: un espacio donde las personas no solo publican
+              contenido, sino donde realmente pueden vivir, explorar, hablar y crear
+              recuerdos dentro de un mundo social interactivo.
+            </p>
           </div>
 
         </section>

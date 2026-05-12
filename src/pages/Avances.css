@@ -167,4 +167,55 @@
     padding: 12px 10px;
     font-size: 11px;
   }
+
+/* LOGO BONES LIFE */
+
+.bonesLifeLogo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.bonesLifeLogo img {
+  width: 340px;
+  max-width: 100%;
+}
+
+/* INFO BONES LIFE */
+
+.bonesLifeInfo {
+  margin-top: 70px;
+  max-width: 780px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.bonesLifeInfo h2 {
+  font-size: 36px;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.bonesLifeInfo p {
+  color: rgba(255,255,255,0.6);
+  font-size: 16px;
+  line-height: 1.8;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .bonesLifeLogo img {
+    width: 220px;
+  }
+
+  .bonesLifeInfo h2 {
+    font-size: 26px;
+  }
+
+  .bonesLifeInfo p {
+    font-size: 14px;
+  }
+}
+
 }
