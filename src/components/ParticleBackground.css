@@ -1,0 +1,68 @@
+.pb-canvas {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.pb-glow {
+  position: fixed;
+  border-radius: 50%;
+  filter: blur(110px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.pb-glow-1 {
+  width: 560px;
+  height: 560px;
+  background: rgba(120, 60, 255, 0.13);
+  top: -160px;
+  left: -120px;
+  animation: pbDrift1 14s ease-in-out infinite alternate;
+}
+
+.pb-glow-2 {
+  width: 420px;
+  height: 420px;
+  background: rgba(60, 140, 255, 0.08);
+  bottom: -100px;
+  right: -80px;
+  animation: pbDrift2 16s ease-in-out infinite alternate;
+}
+
+.pb-glow-3 {
+  width: 380px;
+  height: 380px;
+  background: rgba(200, 80, 255, 0.07);
+  top: 40%;
+  left: 55%;
+  animation: pbDrift3 18s ease-in-out infinite alternate;
+}
+
+@keyframes pbDrift1 {
+  from { transform: translate(0, 0) scale(1); }
+  to   { transform: translate(30px, 22px) scale(1.08); }
+}
+
+@keyframes pbDrift2 {
+  from { transform: translate(0, 0) scale(1); }
+  to   { transform: translate(-20px, -15px) scale(1.06); }
+}
+
+@keyframes pbDrift3 {
+  from { transform: translate(-50%, -50%) scale(1); }
+  to   { transform: translate(calc(-50% + 28px), calc(-50% + 20px)) scale(1.1); }
+}
+
+.pb-cursor {
+  position: fixed;
+  width: 340px;
+  height: 340px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(130, 70, 255, 0.1) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 0;
+  transform: translate(-50%, -50%);
+  transition: left 0.07s linear, top 0.07s linear;
+}

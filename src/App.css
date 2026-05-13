@@ -1,6 +1,8 @@
 .page {
+  position: relative;
+  z-index: 1;
   min-height: 100vh;
-  background: #030303;
+  background: transparent;
   color: white;
   font-family: Inter, sans-serif;
   padding: 20px 60px;
