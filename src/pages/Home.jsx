@@ -101,13 +101,14 @@ export default function Home() {
               ÚNETE AL DISCORD
             </button>
 
-            <button
+            <a
+              href="https://github.com/FROOTIS1/bones-web/releases/download/v1.0.0/app-release.apk"
+              download
               className="secondary"
-              disabled
-              style={{ opacity: 0.4, cursor: "not-allowed" }}
+              style={{ textDecoration: "none" }}
             >
-              VER BETA →
-            </button>
+              DESCARGAR APK →
+            </a>
           </div>
 
           <div className="users">
@@ -185,7 +186,13 @@ export default function Home() {
       {/* FOOTER */}
       <footer id="contacto">
         <Skull size={14} />
-        PRÓXIMAMENTE EN ANDROID · APK DISPONIBLE PRÓXIMAMENTE
+        DISPONIBLE EN ANDROID ·{" "}
+        <a
+          href="https://github.com/FROOTIS1/bones-web/releases/download/v1.0.0/app-release.apk"
+          style={{ color: "inherit", textDecoration: "underline" }}
+        >
+          DESCARGAR APK BETA
+        </a>
       </footer>
 
     </main>
