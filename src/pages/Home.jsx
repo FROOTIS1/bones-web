@@ -102,7 +102,7 @@ export default function Home() {
             </button>
 
             <a
-              href="https://github.com/FROOTIS1/bones-web/releases/download/v1.0.1/app-release.apk"
+              href="https://expo.dev/artifacts/eas/d9JqY8qVPZ3WLfu4CVjnVH.apk"
               download
               className="secondary"
               style={{ textDecoration: "none" }}
@@ -188,7 +188,7 @@ export default function Home() {
         <Skull size={14} />
         DISPONIBLE EN ANDROID ·{" "}
         <a
-          href="https://github.com/FROOTIS1/bones-web/releases/download/v1.0.1/app-release.apk"
+          href="https://expo.dev/artifacts/eas/d9JqY8qVPZ3WLfu4CVjnVH.apk"
           style={{ color: "inherit", textDecoration: "underline" }}
         >
           DESCARGAR APK BETA
