@@ -148,10 +148,11 @@ export default function Home() {
             <div className="heroRight">
               <div className="mockupWrap">
                 <div className="mockupGlow" />
-                <div className="mockupCard">
+                <div className="mockupCard" style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
                   <img
-                    src="/images/mostazon-card.png"
-                    alt="Bones Social App"
+                    src="/images/bones-social/bones-logo.png"
+                    alt="Bones Social"
+                    style={{ width: "62%", height: "62%", objectFit: "contain", position: "relative", zIndex: 1 }}
                   />
                   <div className="mockupBar">
                     <div className="mockupBarUser">
