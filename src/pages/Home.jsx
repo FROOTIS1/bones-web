@@ -102,7 +102,7 @@ export default function Home() {
             </button>
 
             <a
-              href="https://expo.dev/artifacts/eas/wvDqSYSaW8bNr8mTN7mnLt.apk"
+              href="https://expo.dev/artifacts/eas/uUDPTChbHkQ3eVKYn99wv2.apk"
               download
               className="secondary"
               style={{ textDecoration: "none" }}
@@ -188,7 +188,7 @@ export default function Home() {
         <Skull size={14} />
         DISPONIBLE EN ANDROID ·{" "}
         <a
-          href="https://expo.dev/artifacts/eas/wvDqSYSaW8bNr8mTN7mnLt.apk"
+          href="https://expo.dev/artifacts/eas/uUDPTChbHkQ3eVKYn99wv2.apk"
           style={{ color: "inherit", textDecoration: "underline" }}
         >
           DESCARGAR APK BETA
