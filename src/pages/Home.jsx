@@ -4,6 +4,7 @@ import {
   Gamepad2,
   MessageCircle,
   Settings,
+  ShieldCheck,
   Sparkles,
 } from "lucide-react";
 import Navbar from "../components/Navbar";
@@ -297,6 +298,102 @@ export default function Home() {
         </section>
 
         {/* ══ DISCORD CTA ════════════════════════════════════════ */}
+        {/* ══ INSTALACIÓN ════════════════════════════════════════ */}
+        <section className="installSection pageInner" id="instalar">
+          <div className="installInner">
+
+            <div className="installHeader">
+              <span className="tag">
+                <Download size={13} />
+                GUÍA DE INSTALACIÓN
+              </span>
+              <h2 className="installTitle">
+                ¿Cómo instalar<br />
+                <span className="gradient-text">el APK?</span>
+              </h2>
+              <p className="installSubtitle">
+                Sigue estos pasos — tarda menos de 2 minutos.
+              </p>
+            </div>
+
+            {/* STEPS */}
+            <div className="installSteps">
+
+              <div className="installStep">
+                <div className="installStepNum">1</div>
+                <div className="installStepContent">
+                  <h3>Descarga el APK</h3>
+                  <p>Pulsa el botón <strong>"DESCARGAR APK"</strong> de esta página. Se descargará un archivo <code>.apk</code> en tu carpeta de descargas.</p>
+                </div>
+              </div>
+
+              <div className="installStepArrow">↓</div>
+
+              <div className="installStep">
+                <div className="installStepNum">2</div>
+                <div className="installStepContent">
+                  <h3>Abre el archivo descargado</h3>
+                  <p>Desliza la barra de notificaciones hacia abajo y toca el archivo descargado, o abre tu app de <strong>Descargas</strong> y busca <code>application-ea19de92.apk</code>.</p>
+                </div>
+              </div>
+
+              <div className="installStepArrow">↓</div>
+
+              {/* PERMISO — caja especial */}
+              <div className="installPermBox">
+                <div className="installPermHeader">
+                  <ShieldCheck size={20} className="installPermIcon" />
+                  <span>Paso importante: Activar "Fuentes desconocidas"</span>
+                </div>
+                <p className="installPermDesc">
+                  Android bloquea la instalación de apps fuera de la Play Store por seguridad. Solo tienes que darle permiso una vez a tu navegador.
+                </p>
+                <div className="installPermSteps">
+                  <div className="installPermStep">
+                    <span className="installPermBadge">Android 8+</span>
+                    <p>Cuando aparezca el aviso, toca <strong>"Configuración"</strong> → activa <strong>"Permitir de esta fuente"</strong> → vuelve atrás e instala.</p>
+                  </div>
+                  <div className="installPermStep">
+                    <span className="installPermBadge samsung">Samsung</span>
+                    <p>Ajustes → Aplicaciones → tu navegador (Chrome o Samsung Internet) → <strong>"Instalar apps desconocidas"</strong> → Permitir.</p>
+                  </div>
+                  <div className="installPermStep">
+                    <span className="installPermBadge xiaomi">Xiaomi / MIUI</span>
+                    <p>Ajustes de seguridad → <strong>"Instalar desde fuentes desconocidas"</strong> → actívalo para tu navegador.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="installStepArrow">↓</div>
+
+              <div className="installStep">
+                <div className="installStepNum">3</div>
+                <div className="installStepContent">
+                  <h3>Toca "Instalar"</h3>
+                  <p>Android te mostrará la pantalla de instalación. Pulsa <strong>"Instalar"</strong> y espera unos segundos.</p>
+                </div>
+              </div>
+
+              <div className="installStepArrow">↓</div>
+
+              <div className="installStep highlight">
+                <div className="installStepNum done">✓</div>
+                <div className="installStepContent">
+                  <h3>¡Listo! Abre Bones Social</h3>
+                  <p>Toca <strong>"Abrir"</strong> o búscala en tu menú de apps. Crea tu cuenta y únete a la comunidad.</p>
+                </div>
+              </div>
+
+            </div>
+
+            <a href={apkUrl} download className="installDownloadBtn">
+              <Download size={18} />
+              DESCARGAR APK v1.0.2
+            </a>
+
+          </div>
+        </section>
+
         <section className="ctaSection pageInner" id="contacto">
           <div className="ctaInner">
             <div className="ctaGlow" />

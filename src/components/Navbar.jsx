@@ -52,13 +52,14 @@ export default function Navbar() {
           <a onClick={() => scrollTo("caracteristicas")}>CARACTERÍSTICAS</a>
           <a onClick={goSobre}          className={isSobre ? "active" : ""}>SOBRE NOSOTROS</a>
           <a onClick={goAv}             className={isAv    ? "active" : ""}>AVANCES</a>
+          <a onClick={() => scrollTo("instalar")}>INSTALAR</a>
           <a onClick={() => scrollTo("contacto")}>CONTACTO</a>
         </div>
 
         {/* Desktop right */}
         <div className="navRight">
           <a
-            href="https://github.com/FROOTIS1/bones-web/releases/download/v1.0.1/app-release.apk"
+            href="https://expo.dev/artifacts/eas/uUDPTChbHkQ3eVKYn99wv2.apk"
             download
             className="btnOutline"
             style={{ textDecoration: "none" }}
@@ -85,10 +86,11 @@ export default function Navbar() {
           <a onClick={() => scrollTo("caracteristicas")}>CARACTERÍSTICAS</a>
           <a onClick={goSobre}          className={isSobre ? "active" : ""}>SOBRE NOSOTROS</a>
           <a onClick={goAv}             className={isAv    ? "active" : ""}>AVANCES</a>
+          <a onClick={() => scrollTo("instalar")}>INSTALAR</a>
           <a onClick={() => scrollTo("contacto")}>CONTACTO</a>
           <div className="mobileMenuBottom">
             <a
-              href="https://github.com/FROOTIS1/bones-web/releases/download/v1.0.1/app-release.apk"
+              href="https://expo.dev/artifacts/eas/uUDPTChbHkQ3eVKYn99wv2.apk"
               download
               className="btnOutline"
               style={{ textDecoration: "none", display: "flex", alignItems: "center", justifyContent: "center", gap: 8 }}
