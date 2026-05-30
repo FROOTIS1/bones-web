@@ -14,30 +14,30 @@
 }
 
 .pb-glow-1 {
-  width: 560px;
-  height: 560px;
-  background: rgba(120, 60, 255, 0.13);
-  top: -160px;
-  left: -120px;
-  animation: pbDrift1 14s ease-in-out infinite alternate;
+  width: 700px;
+  height: 700px;
+  background: rgba(124, 58, 237, 0.11);
+  top: -200px;
+  left: -140px;
+  animation: pbDrift1 16s ease-in-out infinite alternate;
 }
 
 .pb-glow-2 {
-  width: 420px;
-  height: 420px;
-  background: rgba(60, 140, 255, 0.08);
-  bottom: -100px;
-  right: -80px;
-  animation: pbDrift2 16s ease-in-out infinite alternate;
+  width: 500px;
+  height: 500px;
+  background: rgba(59, 130, 246, 0.08);
+  bottom: -120px;
+  right: -100px;
+  animation: pbDrift2 18s ease-in-out infinite alternate;
 }
 
 .pb-glow-3 {
-  width: 380px;
-  height: 380px;
-  background: rgba(200, 80, 255, 0.07);
+  width: 440px;
+  height: 440px;
+  background: rgba(192, 132, 252, 0.07);
   top: 40%;
   left: 55%;
-  animation: pbDrift3 18s ease-in-out infinite alternate;
+  animation: pbDrift3 20s ease-in-out infinite alternate;
 }
 
 @keyframes pbDrift1 {
