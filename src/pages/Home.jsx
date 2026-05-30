@@ -156,9 +156,7 @@ export default function Home() {
                   />
                   <div className="mockupBar">
                     <div className="mockupBarUser">
-                      <div className="mockupAvatar">
-                        <img src="/images/bones-social/bones-logo.png" alt="Bones" style={{ width: 24, height: 24, objectFit: "contain" }} />
-                      </div>
+                      <div className="mockupAvatar" />
                       <div>
                         <strong>Mostazón</strong>
                         <small>● En línea</small>
