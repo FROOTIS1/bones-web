@@ -84,7 +84,7 @@ const FEATURES = [
 
 /* ── STATS ────────────────────────────────────────────────── */
 const STATS = [
-  { num: "v1.0.2",    label: "Versión actual",    sub: "Estable para Android" },
+  { num: "v1.0.4",    label: "Versión actual",    sub: "Estable para Android" },
   { num: "Beta",      label: "Estado actual",      sub: "Acceso público activo" },
   { num: "APK",       label: "Disponible ya",      sub: "Sin necesidad de Play Store" },
   { num: "Discord",   label: "Comunidad abierta",  sub: "Únete gratis ahora" },
@@ -93,7 +93,7 @@ const STATS = [
 /* ═══════════════════════════════════════════════════════════ */
 export default function Home() {
   const openDiscord = () => window.open("https://discord.gg/r29J6fwrQ", "_blank");
-  const apkUrl = "https://expo.dev/artifacts/eas/uUDPTChbHkQ3eVKYn99wv2.apk";
+  const apkUrl = "https://expo.dev/artifacts/eas/d6nSMstDsQcd9mAK5aGn82.apk";
 
   // Duplicate marquee for seamless loop
   const marqueeItems = [...MARQUEE_ITEMS, ...MARQUEE_ITEMS];
