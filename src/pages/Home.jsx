@@ -388,7 +388,7 @@ export default function Home() {
 
             <a href={apkUrl} download className="installDownloadBtn">
               <Download size={18} />
-              DESCARGAR APK v1.0.2
+              DESCARGAR APK v1.0.4
             </a>
 
           </div>
@@ -420,7 +420,7 @@ export default function Home() {
               </button>
               <a href={apkUrl} download className="ctaBtnSecondary">
                 <Download size={20} />
-                DESCARGAR APK v1.0.2
+                DESCARGAR APK v1.0.4
               </a>
             </div>
           </div>
@@ -444,7 +444,7 @@ export default function Home() {
           </div>
 
           <div className="footerRight">
-            © 2026 Bones Social · Beta v1.0.2
+            © 2026 Bones Social · Beta v1.0.4
           </div>
         </footer>
 
