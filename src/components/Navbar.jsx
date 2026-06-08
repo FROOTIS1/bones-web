@@ -11,10 +11,12 @@ export default function Navbar() {
   const isHome  = location.pathname === "/";
   const isSobre = location.pathname === "/sobre-nosotros";
   const isAv    = location.pathname === "/avances";
+  const isBlog  = location.pathname.startsWith("/blog");
 
-  const goHome = () => { setOpen(false); navigate("/"); };
-  const goSobre= () => { setOpen(false); navigate("/sobre-nosotros"); };
-  const goAv   = () => { setOpen(false); navigate("/avances"); };
+  const goHome  = () => { setOpen(false); navigate("/"); };
+  const goSobre = () => { setOpen(false); navigate("/sobre-nosotros"); };
+  const goAv    = () => { setOpen(false); navigate("/avances"); };
+  const goBlog  = () => { setOpen(false); navigate("/blog"); };
 
   const scrollTo = (id) => {
     setOpen(false);
@@ -48,10 +50,11 @@ export default function Navbar() {
 
         {/* Desktop links */}
         <div className="navLinks">
-          <a onClick={goHome}           className={isHome  && !isSobre && !isAv ? "active" : ""}>INICIO</a>
+          <a onClick={goHome}           className={isHome  && !isSobre && !isAv && !isBlog ? "active" : ""}>INICIO</a>
           <a onClick={() => scrollTo("caracteristicas")}>CARACTERÍSTICAS</a>
           <a onClick={goSobre}          className={isSobre ? "active" : ""}>SOBRE NOSOTROS</a>
           <a onClick={goAv}             className={isAv    ? "active" : ""}>AVANCES</a>
+          <a onClick={goBlog}           className={isBlog  ? "active" : ""}>BLOG</a>
           <a onClick={() => scrollTo("instalar")}>INSTALAR</a>
           <a onClick={() => scrollTo("contacto")}>CONTACTO</a>
         </div>
@@ -86,6 +89,7 @@ export default function Navbar() {
           <a onClick={() => scrollTo("caracteristicas")}>CARACTERÍSTICAS</a>
           <a onClick={goSobre}          className={isSobre ? "active" : ""}>SOBRE NOSOTROS</a>
           <a onClick={goAv}             className={isAv    ? "active" : ""}>AVANCES</a>
+          <a onClick={goBlog}           className={isBlog  ? "active" : ""}>BLOG</a>
           <a onClick={() => scrollTo("instalar")}>INSTALAR</a>
           <a onClick={() => scrollTo("contacto")}>CONTACTO</a>
           <div className="mobileMenuBottom">

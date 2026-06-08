@@ -1,6 +1,8 @@
 import { Route, Routes } from "react-router-dom";
 import ParticleBackground from "./components/ParticleBackground";
 import Avances from "./pages/Avances.jsx";
+import Blog from "./pages/Blog.jsx";
+import BlogPost from "./pages/BlogPost.jsx";
 import Home from "./pages/Home.jsx";
 import SobreNosotros from "./pages/SobreNosotros.jsx";
 
@@ -12,6 +14,8 @@ export default function App() {
         <Route path="/"               element={<Home />} />
         <Route path="/sobre-nosotros" element={<SobreNosotros />} />
         <Route path="/avances"        element={<Avances />} />
+        <Route path="/blog"           element={<Blog />} />
+        <Route path="/blog/:slug"     element={<BlogPost />} />
       </Routes>
     </>
   );
