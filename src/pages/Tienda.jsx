@@ -14,7 +14,7 @@ const COIN_PACKAGES = [
     dark: "#1A3A7A",
     emoji: "⭐",
     label: "Starter",
-    stripeUrl: "https://buy.stripe.com/REEMPLAZA_AQUI_300_COINS",
+    checkoutUrl: "https://bones-social.lemonsqueezy.com/checkout/buy/74d754ac-5117-4069-b054-dba66cf2b403",
   },
   {
     id: "coins_500",
@@ -26,7 +26,7 @@ const COIN_PACKAGES = [
     dark: "#3B1A6E",
     emoji: "🔥",
     label: "Popular",
-    stripeUrl: "https://buy.stripe.com/REEMPLAZA_AQUI_500_COINS",
+    checkoutUrl: "https://bones-social.lemonsqueezy.com/checkout/buy/1e1105dc-ee2a-423d-83b2-2d600895abb3",
   },
   {
     id: "coins_1000",
@@ -38,7 +38,7 @@ const COIN_PACKAGES = [
     dark: "#5C1A3A",
     emoji: "💎",
     label: "Pro",
-    stripeUrl: "https://buy.stripe.com/REEMPLAZA_AQUI_1000_COINS",
+    checkoutUrl: "https://bones-social.lemonsqueezy.com/checkout/buy/f391d97d-d35e-4602-b1a3-223c590fd1ec",
   },
   {
     id: "coins_2500",
@@ -50,7 +50,7 @@ const COIN_PACKAGES = [
     dark: "#5C3A00",
     emoji: "🏆",
     label: "Elite",
-    stripeUrl: "https://buy.stripe.com/REEMPLAZA_AQUI_2500_COINS",
+    checkoutUrl: "https://bones-social.lemonsqueezy.com/checkout/buy/2ea44282-55bd-4720-8722-b9341dd53c45",
   },
 ];
 
@@ -65,7 +65,7 @@ const SKELETON_PACKAGES = [
     dark: "#1F2937",
     emoji: "💀",
     label: "Puñado",
-    stripeUrl: "https://buy.stripe.com/REEMPLAZA_AQUI_150_SKELETONS",
+    checkoutUrl: "https://bones-social.lemonsqueezy.com/checkout/buy/0382152c-c953-4a6c-b01d-0339d4e59c0a",
   },
   {
     id: "skl_500",
@@ -76,7 +76,7 @@ const SKELETON_PACKAGES = [
     dark: "#2D1B69",
     emoji: "💀",
     label: "Bolsa",
-    stripeUrl: "https://buy.stripe.com/REEMPLAZA_AQUI_500_SKELETONS",
+    checkoutUrl: "https://bones-social.lemonsqueezy.com/checkout/buy/97fd2023-0c25-4bd0-9299-74d08e07d692",
   },
   {
     id: "skl_1200",
@@ -87,7 +87,7 @@ const SKELETON_PACKAGES = [
     dark: "#4C0519",
     emoji: "💀",
     label: "Cofre",
-    stripeUrl: "https://buy.stripe.com/REEMPLAZA_AQUI_1200_SKELETONS",
+    checkoutUrl: "https://bones-social.lemonsqueezy.com/checkout/buy/430b1bf5-53c0-4a4f-ac3f-ff78a6e77652",
   },
   {
     id: "skl_2500",
@@ -98,7 +98,7 @@ const SKELETON_PACKAGES = [
     dark: "#451A03",
     emoji: "💀",
     label: "Tesoro",
-    stripeUrl: "https://buy.stripe.com/REEMPLAZA_AQUI_2500_SKELETONS",
+    checkoutUrl: "https://bones-social.lemonsqueezy.com/checkout/buy/fe45aa04-6e8b-4842-9553-671c9637e45e",
   },
 ];
 
@@ -113,7 +113,7 @@ function CoinCard({ pkg }) {
       <div className="shop-card-amount">{pkg.coins.toLocaleString()}</div>
       <div className="shop-card-currency">Coins 🪙</div>
       <a
-        href={pkg.stripeUrl}
+        href={pkg.checkoutUrl}
         target="_blank"
         rel="noopener noreferrer"
         className="shop-buy-btn"
@@ -137,7 +137,7 @@ function SkeletonCard({ pkg }) {
       <div className="shop-card-amount">{display}</div>
       <div className="shop-card-currency">Skeletons 💀</div>
       <a
-        href={pkg.stripeUrl}
+        href={pkg.checkoutUrl}
         target="_blank"
         rel="noopener noreferrer"
         className="shop-buy-btn"
@@ -164,7 +164,7 @@ export default function Tienda() {
           <span className="gradient-text">Bones Social</span>
         </h1>
         <p className="shop-hero-sub">
-          Compra Coins y Skeletons de forma segura con Stripe.<br />
+          Compra Coins y Skeletons de forma segura con Lemon Squeezy.<br />
           Los créditos se añaden manualmente a tu cuenta en 24&nbsp;h.
         </p>
         <div className="shop-info-box">
@@ -218,7 +218,7 @@ export default function Tienda() {
           {[
             { q: "¿Cómo se añaden las monedas a mi cuenta?", a: "Tras el pago, escríbenos por Discord con tu UID y el comprobante. Las añadimos en menos de 24 h." },
             { q: "¿Dónde encuentro mi UID?", a: "Ve a tu perfil en Bones Social → botón de configuración ⚙️ → tu UID aparece en la parte inferior." },
-            { q: "¿El pago es seguro?", a: "Sí. Usamos Stripe, el procesador de pagos más confiable del mundo. No almacenamos datos de tarjeta." },
+            { q: "¿El pago es seguro?", a: "Sí. Usamos Lemon Squeezy, plataforma de pagos segura y confiable. No almacenamos datos de tarjeta." },
             { q: "¿Puedo pedir reembolso?", a: "Las monedas digitales no son reembolsables una vez acreditadas. Contáctanos antes de 24 h si hay algún problema." },
           ].map(({ q, a }) => (
             <div className="faq-item" key={q}>
