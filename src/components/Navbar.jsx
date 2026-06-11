@@ -8,15 +8,17 @@ export default function Navbar() {
   const location  = useLocation();
   const [open, setOpen] = useState(false);
 
-  const isHome  = location.pathname === "/";
-  const isSobre = location.pathname === "/sobre-nosotros";
-  const isAv    = location.pathname === "/avances";
-  const isBlog  = location.pathname.startsWith("/blog");
+  const isHome    = location.pathname === "/";
+  const isSobre   = location.pathname === "/sobre-nosotros";
+  const isAv      = location.pathname === "/avances";
+  const isBlog    = location.pathname.startsWith("/blog");
+  const isTienda  = location.pathname === "/tienda";
 
-  const goHome  = () => { setOpen(false); navigate("/"); };
-  const goSobre = () => { setOpen(false); navigate("/sobre-nosotros"); };
-  const goAv    = () => { setOpen(false); navigate("/avances"); };
-  const goBlog  = () => { setOpen(false); navigate("/blog"); };
+  const goHome    = () => { setOpen(false); navigate("/"); };
+  const goSobre   = () => { setOpen(false); navigate("/sobre-nosotros"); };
+  const goAv      = () => { setOpen(false); navigate("/avances"); };
+  const goBlog    = () => { setOpen(false); navigate("/blog"); };
+  const goTienda  = () => { setOpen(false); navigate("/tienda"); };
 
   const scrollTo = (id) => {
     setOpen(false);
@@ -50,11 +52,12 @@ export default function Navbar() {
 
         {/* Desktop links */}
         <div className="navLinks">
-          <a onClick={goHome}           className={isHome  && !isSobre && !isAv && !isBlog ? "active" : ""}>INICIO</a>
+          <a onClick={goHome}           className={isHome  && !isSobre && !isAv && !isBlog && !isTienda ? "active" : ""}>INICIO</a>
           <a onClick={() => scrollTo("caracteristicas")}>CARACTERÍSTICAS</a>
-          <a onClick={goSobre}          className={isSobre ? "active" : ""}>SOBRE NOSOTROS</a>
-          <a onClick={goAv}             className={isAv    ? "active" : ""}>AVANCES</a>
-          <a onClick={goBlog}           className={isBlog  ? "active" : ""}>BLOG</a>
+          <a onClick={goSobre}          className={isSobre   ? "active" : ""}>SOBRE NOSOTROS</a>
+          <a onClick={goAv}             className={isAv      ? "active" : ""}>AVANCES</a>
+          <a onClick={goBlog}           className={isBlog    ? "active" : ""}>BLOG</a>
+          <a onClick={goTienda}         className={isTienda  ? "active" : ""} style={{ color: "#c084fc" }}>🛒 TIENDA</a>
           <a onClick={() => scrollTo("instalar")}>INSTALAR</a>
           <a onClick={() => scrollTo("contacto")}>CONTACTO</a>
         </div>
@@ -87,9 +90,10 @@ export default function Navbar() {
         <div className="mobileMenu">
           <a onClick={goHome}           className={isHome  ? "active" : ""}>INICIO</a>
           <a onClick={() => scrollTo("caracteristicas")}>CARACTERÍSTICAS</a>
-          <a onClick={goSobre}          className={isSobre ? "active" : ""}>SOBRE NOSOTROS</a>
-          <a onClick={goAv}             className={isAv    ? "active" : ""}>AVANCES</a>
-          <a onClick={goBlog}           className={isBlog  ? "active" : ""}>BLOG</a>
+          <a onClick={goSobre}          className={isSobre   ? "active" : ""}>SOBRE NOSOTROS</a>
+          <a onClick={goAv}             className={isAv      ? "active" : ""}>AVANCES</a>
+          <a onClick={goBlog}           className={isBlog    ? "active" : ""}>BLOG</a>
+          <a onClick={goTienda}         className={isTienda  ? "active" : ""} style={{ color: "#c084fc" }}>🛒 TIENDA</a>
           <a onClick={() => scrollTo("instalar")}>INSTALAR</a>
           <a onClick={() => scrollTo("contacto")}>CONTACTO</a>
           <div className="mobileMenuBottom">

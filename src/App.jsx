@@ -5,6 +5,7 @@ import Blog from "./pages/Blog.jsx";
 import BlogPost from "./pages/BlogPost.jsx";
 import Home from "./pages/Home.jsx";
 import SobreNosotros from "./pages/SobreNosotros.jsx";
+import Tienda from "./pages/Tienda.jsx";
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
         <Route path="/avances"        element={<Avances />} />
         <Route path="/blog"           element={<Blog />} />
         <Route path="/blog/:slug"     element={<BlogPost />} />
+        <Route path="/tienda"         element={<Tienda />} />
       </Routes>
     </>
   );
