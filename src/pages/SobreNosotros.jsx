@@ -66,7 +66,7 @@ const BLOCKS = [
 
 export default function SobreNosotros() {
   const openDiscord = () => window.open("https://discord.gg/r29J6fwrQ", "_blank");
-  const apkUrl = "https://expo.dev/artifacts/eas/xHfCkEqQIhZzJkmF-eKMmsRDsygih8Zdu7B2zbFEe_o.apk";
+  const apkUrl = "https://expo.dev/artifacts/eas/mb0pD7gs4-TRpK8zJ4GJhpn7SdL80Vb0BJbXLg5-p_Q.apk";
 
   return (
     <>
@@ -156,7 +156,7 @@ export default function SobreNosotros() {
             <a href="/avances">AVANCES</a>
             <a onClick={openDiscord} style={{ cursor: "pointer" }}>DISCORD</a>
           </div>
-          <div className="footerRight">© 2026 Bones Social · Beta v1.0.4</div>
+          <div className="footerRight">© 2026 Bones Social · Beta v1.0.5</div>
         </footer>
 
       </main>

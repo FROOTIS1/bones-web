@@ -65,7 +65,7 @@ export default function Navbar() {
         {/* Desktop right */}
         <div className="navRight">
           <a
-            href="https://expo.dev/artifacts/eas/xHfCkEqQIhZzJkmF-eKMmsRDsygih8Zdu7B2zbFEe_o.apk"
+            href="https://expo.dev/artifacts/eas/mb0pD7gs4-TRpK8zJ4GJhpn7SdL80Vb0BJbXLg5-p_Q.apk"
             download
             className="btnOutline"
             style={{ textDecoration: "none" }}
@@ -98,7 +98,7 @@ export default function Navbar() {
           <a onClick={() => scrollTo("contacto")}>CONTACTO</a>
           <div className="mobileMenuBottom">
             <a
-              href="https://expo.dev/artifacts/eas/xHfCkEqQIhZzJkmF-eKMmsRDsygih8Zdu7B2zbFEe_o.apk"
+              href="https://expo.dev/artifacts/eas/mb0pD7gs4-TRpK8zJ4GJhpn7SdL80Vb0BJbXLg5-p_Q.apk"
               download
               className="btnOutline"
               style={{ textDecoration: "none", display: "flex", alignItems: "center", justifyContent: "center", gap: 8 }}

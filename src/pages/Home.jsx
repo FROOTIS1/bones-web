@@ -84,7 +84,7 @@ const FEATURES = [
 
 /* ── STATS ────────────────────────────────────────────────── */
 const STATS = [
-  { num: "v1.0.4",    label: "Versión actual",    sub: "Estable para Android" },
+  { num: "v1.0.5",    label: "Versión actual",    sub: "Estable para Android" },
   { num: "Beta",      label: "Estado actual",      sub: "Acceso público activo" },
   { num: "APK",       label: "Disponible ya",      sub: "Sin necesidad de Play Store" },
   { num: "Discord",   label: "Comunidad abierta",  sub: "Únete gratis ahora" },
@@ -93,7 +93,7 @@ const STATS = [
 /* ═══════════════════════════════════════════════════════════ */
 export default function Home() {
   const openDiscord = () => window.open("https://discord.gg/r29J6fwrQ", "_blank");
-  const apkUrl = "https://expo.dev/artifacts/eas/xHfCkEqQIhZzJkmF-eKMmsRDsygih8Zdu7B2zbFEe_o.apk";
+  const apkUrl = "https://expo.dev/artifacts/eas/mb0pD7gs4-TRpK8zJ4GJhpn7SdL80Vb0BJbXLg5-p_Q.apk";
 
   // Duplicate marquee for seamless loop
   const marqueeItems = [...MARQUEE_ITEMS, ...MARQUEE_ITEMS];
@@ -388,7 +388,7 @@ export default function Home() {
 
             <a href={apkUrl} download className="installDownloadBtn">
               <Download size={18} />
-              DESCARGAR APK v1.0.4
+              DESCARGAR APK v1.0.5
             </a>
 
           </div>
@@ -420,7 +420,7 @@ export default function Home() {
               </button>
               <a href={apkUrl} download className="ctaBtnSecondary">
                 <Download size={20} />
-                DESCARGAR APK v1.0.4
+                DESCARGAR APK v1.0.5
               </a>
             </div>
           </div>
@@ -444,7 +444,7 @@ export default function Home() {
           </div>
 
           <div className="footerRight">
-            © 2026 Bones Social · Beta v1.0.4
+            © 2026 Bones Social · Beta v1.0.5
           </div>
         </footer>
 
