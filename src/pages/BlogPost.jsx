@@ -166,7 +166,7 @@ export default function BlogPost() {
             <a href="/blog">BLOG</a>
             <a onClick={() => window.open("https://discord.gg/r29J6fwrQ", "_blank")} style={{ cursor: "pointer" }}>DISCORD</a>
           </div>
-          <div className="footerRight">© 2026 Bones Social · Beta v1.0.2</div>
+          <div className="footerRight">© 2026 Bones Social · Beta v1.0.4</div>
         </footer>
       </main>
     </>

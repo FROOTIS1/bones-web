@@ -28,7 +28,7 @@ export default function Avances() {
   const [tab, setTab] = useState("boneslife");
 
   const openDiscord = () => window.open("https://discord.gg/r29J6fwrQ", "_blank");
-  const apkUrl = "https://github.com/FROOTIS1/bones-web/releases/download/v1.0.1/app-release.apk";
+  const apkUrl = "https://expo.dev/artifacts/eas/xHfCkEqQIhZzJkmF-eKMmsRDsygih8Zdu7B2zbFEe_o.apk";
 
   return (
     <>
@@ -175,7 +175,7 @@ export default function Avances() {
             <a onClick={openDiscord} style={{ cursor: "pointer" }}>DISCORD</a>
             <a href={apkUrl} download>DESCARGAR APK</a>
           </div>
-          <div className="footerRight">© 2026 Bones Social · Beta v1.0.1</div>
+          <div className="footerRight">© 2026 Bones Social · Beta v1.0.4</div>
         </footer>
 
       </main>

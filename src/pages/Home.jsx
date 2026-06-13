@@ -93,7 +93,7 @@ const STATS = [
 /* ═══════════════════════════════════════════════════════════ */
 export default function Home() {
   const openDiscord = () => window.open("https://discord.gg/r29J6fwrQ", "_blank");
-  const apkUrl = "https://expo.dev/artifacts/eas/d6nSMstDsQcd9mAK5aGn82.apk";
+  const apkUrl = "https://expo.dev/artifacts/eas/xHfCkEqQIhZzJkmF-eKMmsRDsygih8Zdu7B2zbFEe_o.apk";
 
   // Duplicate marquee for seamless loop
   const marqueeItems = [...MARQUEE_ITEMS, ...MARQUEE_ITEMS];
