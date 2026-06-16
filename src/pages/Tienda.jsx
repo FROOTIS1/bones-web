@@ -228,6 +228,17 @@ export default function Tienda() {
           ))}
         </div>
       </section>
+
+      {/* LEGAL */}
+      <div className="shop-legal">
+        <p>
+          Al comprar aceptas nuestros{" "}
+          <a href="/terminos">Términos de Servicio</a>,{" "}
+          <a href="/privacidad">Política de Privacidad</a> y{" "}
+          <a href="/reembolsos">Política de Reembolsos</a>.
+        </p>
+        <p>Soporte: <a href="mailto:arroyaveriverarafa@gmail.com">arroyaveriverarafa@gmail.com</a></p>
+      </div>
     </div>
   );
 }

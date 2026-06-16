@@ -6,6 +6,9 @@ import BlogPost from "./pages/BlogPost.jsx";
 import Home from "./pages/Home.jsx";
 import SobreNosotros from "./pages/SobreNosotros.jsx";
 import Tienda from "./pages/Tienda.jsx";
+import Privacidad from "./pages/Privacidad.jsx";
+import Terminos from "./pages/Terminos.jsx";
+import Reembolsos from "./pages/Reembolsos.jsx";
 
 export default function App() {
   return (
@@ -18,6 +21,9 @@ export default function App() {
         <Route path="/blog"           element={<Blog />} />
         <Route path="/blog/:slug"     element={<BlogPost />} />
         <Route path="/tienda"         element={<Tienda />} />
+        <Route path="/privacidad"     element={<Privacidad />} />
+        <Route path="/terminos"       element={<Terminos />} />
+        <Route path="/reembolsos"     element={<Reembolsos />} />
       </Routes>
     </>
   );

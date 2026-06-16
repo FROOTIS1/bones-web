@@ -440,6 +440,9 @@ export default function Home() {
             <a onClick={() => document.getElementById("caracteristicas")?.scrollIntoView({ behavior: "smooth" })}>CARACTERÍSTICAS</a>
             <a href="/sobre-nosotros">SOBRE NOSOTROS</a>
             <a href="/avances">AVANCES</a>
+            <a href="/privacidad">PRIVACIDAD</a>
+            <a href="/terminos">TÉRMINOS</a>
+            <a href="/reembolsos">REEMBOLSOS</a>
             <a onClick={() => openDiscord()}>DISCORD</a>
           </div>
 
