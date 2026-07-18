@@ -66,7 +66,7 @@ const BLOCKS = [
 
 export default function SobreNosotros() {
   const openDiscord = () => window.open("https://discord.gg/r29J6fwrQ", "_blank");
-  const apkUrl = "https://expo.dev/artifacts/eas/mb0pD7gs4-TRpK8zJ4GJhpn7SdL80Vb0BJbXLg5-p_Q.apk";
+  const apkUrl = "https://github.com/FROOTIS1/bones-web/releases/download/v1.0.5/bones-social-v1.0.5.apk";
 
   return (
     <>
