@@ -3,6 +3,7 @@ import {
   Download,
   Gamepad2,
   MessageCircle,
+  Monitor,
   Settings,
   ShieldCheck,
   Sparkles,
@@ -94,6 +95,7 @@ const STATS = [
 export default function Home() {
   const openDiscord = () => window.open("https://discord.gg/r29J6fwrQ", "_blank");
   const apkUrl = "https://github.com/FROOTIS1/bones-web/releases/download/v1.0.5/bones-social-v1.0.5.apk";
+  const windowsUrl = "https://github.com/FROOTIS1/bones-web/releases/download/desktop-v1.0.1/BonesSocial-Setup-1.0.1.exe";
 
   // Duplicate marquee for seamless loop
   const marqueeItems = [...MARQUEE_ITEMS, ...MARQUEE_ITEMS];
@@ -133,6 +135,10 @@ export default function Home() {
                   <Download size={18} />
                   DESCARGAR APK
                 </a>
+                <a href={windowsUrl} download className="heroBtnPrimary" style={{ background: 'linear-gradient(90deg, #0E7490, #22D3EE)' }}>
+                  <Monitor size={18} />
+                  DESCARGAR PARA WINDOWS
+                </a>
                 <button className="heroBtnSecondary" onClick={openDiscord}>
                   <Gamepad2 size={18} />
                   ÚNETE AL DISCORD
@@ -141,7 +147,7 @@ export default function Home() {
 
               <div className="heroPlatform">
                 <div className="heroPlatformDot" />
-                <span>BETA ACTIVA · ANDROID · GRATIS</span>
+                <span>BETA ACTIVA · ANDROID + WINDOWS · GRATIS</span>
               </div>
             </div>
 
