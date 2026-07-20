@@ -1,5 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import ParticleBackground from "./components/ParticleBackground";
+import SiteLoader from "./components/SiteLoader";
+import RevealManager from "./components/RevealManager";
 import Avances from "./pages/Avances.jsx";
 import Blog from "./pages/Blog.jsx";
 import BlogPost from "./pages/BlogPost.jsx";
@@ -13,6 +15,8 @@ import Reembolsos from "./pages/Reembolsos.jsx";
 export default function App() {
   return (
     <>
+      <SiteLoader />
+      <RevealManager />
       <ParticleBackground />
       <Routes>
         <Route path="/"               element={<Home />} />

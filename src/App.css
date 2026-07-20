@@ -2324,3 +2324,130 @@
 .shop-legal p { color: #71717A; font-size: 13px; line-height: 1.8; margin: 4px 0; }
 .shop-legal a { color: #A855F7; text-decoration: none; }
 .shop-legal a:hover { text-decoration: underline; }
+
+/* ═══════════ REMASTER: Loader de entrada ═══════════ */
+.siteLoader {
+  position: fixed; inset: 0; z-index: 99999;
+  background: radial-gradient(ellipse 80% 60% at 50% 42%, #1A1030 0%, #0B0714 55%, #050308 100%);
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  opacity: 1; transform: scale(1);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.siteLoaderFade { opacity: 0; transform: scale(1.05); pointer-events: none; }
+.siteLoaderCenter {
+  position: relative; width: 180px; height: 180px;
+  display: flex; align-items: center; justify-content: center;
+}
+.siteLoaderLogo {
+  width: 150px; height: 150px; object-fit: contain; position: relative;
+  mix-blend-mode: screen;
+  filter: drop-shadow(0 0 24px rgba(124,58,237,0.6));
+  animation: slLogo 1s cubic-bezier(0.34, 1.56, 0.64, 1) 0.15s both,
+             slFloat 3s ease-in-out 1.3s infinite alternate;
+}
+.siteLoaderRing {
+  position: absolute; inset: 0; border-radius: 50%;
+  border: 1.5px solid rgba(124,58,237,0.5);
+  animation: slRing 2s cubic-bezier(0.2, 0.6, 0.3, 1) 0.4s infinite;
+  opacity: 0;
+}
+.siteLoaderGlow {
+  position: absolute; width: 130px; height: 130px; border-radius: 50%;
+  background: radial-gradient(circle, rgba(124,58,237,0.45) 0%, rgba(236,72,153,0.15) 55%, transparent 75%);
+  filter: blur(14px);
+  animation: slGlow 2.2s ease-in-out 0.4s infinite alternate;
+}
+.siteLoaderSub {
+  margin-top: 16px; color: #8B8B96; font-size: 11px; font-weight: 600; letter-spacing: 4px;
+  animation: slFadeIn 1s ease 0.9s both;
+}
+.siteLoaderBarTrack {
+  margin-top: 26px; width: 170px; height: 3px; border-radius: 3px;
+  background: rgba(255,255,255,0.08); overflow: hidden;
+  animation: slFadeIn 0.6s ease 1.1s both;
+}
+.siteLoaderBarFill {
+  height: 100%; width: 45%; border-radius: 3px;
+  background: linear-gradient(90deg, #7C3AED, #EC4899);
+  animation: slBar 1.1s ease-in-out 1.1s infinite;
+}
+.siteLoaderParticle {
+  position: absolute; width: 3px; height: 3px; border-radius: 50%;
+  opacity: 0; animation: slParticle 3s ease-in-out infinite;
+}
+@keyframes slLogo { 0% { opacity: 0; transform: scale(0.4) translateY(14px); } 100% { opacity: 1; transform: scale(1) translateY(0); } }
+@keyframes slFloat { 0% { transform: translateY(0); } 100% { transform: translateY(-7px); } }
+@keyframes slRing { 0% { opacity: 0.7; transform: scale(0.55); } 100% { opacity: 0; transform: scale(1.45); } }
+@keyframes slGlow { 0% { opacity: 0.55; transform: scale(0.92); } 100% { opacity: 1; transform: scale(1.08); } }
+@keyframes slFadeIn { 0% { opacity: 0; } 100% { opacity: 1; } }
+@keyframes slBar { 0% { transform: translateX(-110%); } 100% { transform: translateX(400%); } }
+@keyframes slParticle { 0% { opacity: 0; transform: translateY(8px); } 35% { opacity: 0.8; } 100% { opacity: 0; transform: translateY(-24px); } }
+
+/* ═══════════ REMASTER: Reveal on scroll ═══════════ */
+.reveal-init {
+  opacity: 0;
+  transform: translateY(26px);
+  transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1), transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+}
+.reveal-in {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+@media (prefers-reduced-motion: reduce) {
+  .reveal-init { opacity: 1; transform: none; transition: none; }
+}
+
+/* ═══════════ REMASTER: micro-interacciones globales ═══════════ */
+.featureCard, .aboutBlock, .shop-card, .blogCard, .statCard {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+.featureCard:hover, .aboutBlock:hover, .blogCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 40px rgba(124,58,237,0.18);
+  border-color: rgba(124,58,237,0.4);
+}
+.shop-card:hover { transform: translateY(-5px) scale(1.015); }
+.heroBtnPrimary, .ctaBtnPrimary, .installDownloadBtn {
+  transition: transform 0.22s ease, box-shadow 0.22s ease, filter 0.22s ease;
+}
+.heroBtnPrimary:hover, .ctaBtnPrimary:hover, .installDownloadBtn:hover {
+  transform: translateY(-2px) scale(1.03);
+  filter: brightness(1.12);
+  box-shadow: 0 10px 32px rgba(124,58,237,0.35);
+}
+
+/* Scrollbar acorde a la marca */
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: #0B0714; }
+::-webkit-scrollbar-thumb { background: #2D2438; border-radius: 6px; }
+::-webkit-scrollbar-thumb:hover { background: #7C3AED; }
+
+/* ═══════════ REMASTER: móvil ═══════════ */
+@media (max-width: 768px) {
+  /* Tipografía del hero más contenida y centrada */
+  .heroH1 { font-size: clamp(30px, 9vw, 42px) !important; line-height: 1.12 !important; }
+  .heroDesc { font-size: 14px !important; }
+  .heroBtns { flex-direction: column !important; width: 100%; }
+  .heroBtns > * { width: 100% !important; justify-content: center !important; box-sizing: border-box; }
+
+  /* Secciones con menos aire muerto */
+  .page { padding-top: 66px !important; }
+  .pageInner { padding-left: 16px !important; padding-right: 16px !important; }
+
+  /* Footer apilado y legible */
+  .footer { flex-direction: column !important; gap: 14px !important; text-align: center; padding: 24px 16px !important; }
+  .footerCenter { flex-wrap: wrap !important; justify-content: center !important; gap: 10px 16px !important; }
+
+  /* Tienda: tarjetas cómodas al pulgar */
+  .shop-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 10px !important; }
+
+  /* Legal en móvil */
+  .legalPage { padding: 24px 16px 10px; }
+  .legalTitle { font-size: 26px; }
+}
+
+@media (max-width: 420px) {
+  .shop-grid { grid-template-columns: 1fr !important; }
+  .siteLoaderLogo { width: 120px; height: 120px; }
+}
